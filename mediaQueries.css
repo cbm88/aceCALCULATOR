@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 16, 2017, 11:11:42 PM
+    Author     : Mark Rustad
+*/
+
+@media all and (max-width: 450px){
+    
+    #main{
+        max-width: 90%;
+    }
+    
+    header{
+        max-width: 90%;
+    }
+    
+    #ace{
+        font-size: 16pt;
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+    
+    #calc{
+        font-size: 16pt;
+        text-align: center;
+        position: relative;
+        left: -50px;
+    }
+    
+}
+
+@media all and (max-width: 768px){
+
+    #ace{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        font-size: 24pt;
+    }
+    
+    #calc{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        font-size: 24pt;
+    }
+    
+    #main{
+        max-width: 90%;
+        position: relative;
+        left: 2px;
+    }
+    
+    header{
+        height: 150px;
+        max-width: 90%;
+    }
+    
+}

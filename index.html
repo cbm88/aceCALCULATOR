@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ACE CALCULATOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="aceCalculation.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link href="aceStylesheet.css" rel="stylesheet" type="text/css"/>
+        <link href="mediaQueries.css" rel="stylesheet" type="text/css"/>
+        
+        <script>
+            $(document).ready(function(){
+                $("#ace").delay(1500).fadeIn(5000);
+                $("#calc").delay(500).fadeIn(5000);
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="main">
+        
+            <header>
+                <h1 id="ace">ACE</h1><h1 id="calc">Calculator</h1>
+            </header>
+        
+        
+        <div id="info">
+            <p>
+                Accumulated Cyclone Energy (ACE) measures the intensity or an individual tropical cyclone throughout its entire lifespan.
+                It is computed by adding the sum of the squares of a storm's maximum sustained winds (in knots) at four distinct, six-hour time intervals
+                (00 UTC, 06 UTC, 12 UTC, 18 UTC). A season's ACE is therefore calculated by summing the ACE produced by all of its storms.
+                An average hurricane season normally produces an ACE of 110, with the 2005 Atlantic Hurricane Season generating the
+                highest ACE value on record for the Western Hemisphere -- 250 -- for a single season.
+            </p>
+            
+            <p>
+                Of note, Hurricane Ioke (2006) holds the record for the highest ACE value with 82 as it traversed the Central Pacific Basin.
+                Closer to home, the San Ciriaco Hurricane (1899) holds the Atlantic Basin's record with an ACE value of 73.6.
+                While Hurricane Katrina (2005) and Hurricane Patricia (2015) were the most destructive and intense hurricanes ever measured, respectively,
+                their relatively short lifespans as cyclones limited their total ACE. Katrina registered an ACE of 20, while Patricia's ACE value was 17.885.
+                <br><br>
+                
+                Try it out for yourself below!
+            </p>
+        </div>
+        
+        <form>
+            <p><label>00 UTC: </label> <input id="valueOne" type="text" value="" size="30" placeholder="Enter Windspeed (in MPH or KTS)"/></p>
+            <p><label>06 UTC: </label> <input id="valueTwo" type="text" value="" size="30"/></p>
+            <p><label>12 UTC: </label> <input id="valueThree" type="text" value="" size="30"/></p>
+            <p><label>18 UTC: </label> <input id="valueFour" type="text" value="" size="30"/></p>
+            <p><input id="radio" type="radio" name="radioButton" value="Convert to Knots"/> Convert to Knots</p>
+            <p><input id="button" type="button" name="calculateButton" value="GET THE ACE" onclick="calculate()"/></p>
+            <h3 id="answer"> </h3>
+        </form>
+        </div>
+            
+    </body>
+</html>

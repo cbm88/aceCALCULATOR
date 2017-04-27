@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 15, 2017, 8:15:57 PM
+    Author     : Mark Rustad
+*/
+
+body{
+    background: cornsilk;
+    background-size: cover;
+}
+
+header{
+    margin: 15px 15px 15px 15px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    background: linear-gradient(-90deg, darkslateblue, mediumslateblue);
+    color: ivory;
+    font-variant-caps: titling-caps;
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 6px 1.7px 6px darkgray;
+    display: block;
+}
+
+#ace{
+    display: none;
+}
+
+#calc{
+    display: none;
+}
+
+#main{
+    background: lavender 0 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: darkblue ridge thick;
+    margin: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 95%;
+}
+
+#info:first-letter{
+    font-weight: bold;
+    text-shadow: -5px -7px 2.5px gray;
+}
+
+#button{
+    height: 40px;
+    border: black inset medium;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#answer{
+    color: darkred;
+    font-weight: bold;
+}
